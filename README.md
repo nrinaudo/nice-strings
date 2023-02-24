@@ -1,11 +1,11 @@
 # Naughty and Nice Strings
 
 ## Challenge:
-We need help figuring out which strings in a text file are naughty or nice.  All of the strings are made up only of the lower-case characters 'a' to 'z'.
+We need help figuring out which strings in a text file are naughty or nice.  All of the strings are made up only of the lower-case characters `'a'` to `'z'`.
 A nice string is one with all of the following properties:
-* It contains at least three vowels (aeiou only), like aei, xazegov, or aeiouaeiouaeiou.
-* It contains at least one letter that appears twice in a row, like xx, abcdde (dd), or aabbccdd (aa, bb, cc, or dd).
-* It does not contain the strings ab, cd, pq, or xy, even if they are part of one of the other requirements.
+* It contains at least three vowels (`aeiou` only), like `aei`, `xazegov`, or `aeiouaeiouaeiou`.
+* It contains at least one letter that appears twice in a row, like `xx`, `abcdde` (`dd`), or `aabbccdd` (`aa`, `bb`, `cc`, or `dd`).
+* It does not contain the strings `ab`, `cd`, `pq`, or `xy`, even if they are part of one of the other requirements.
 
 Any string which is not nice is called a naughty string.
 
@@ -17,3 +17,7 @@ For example:
 * `dvszwmarrgswjxmb` is naughty because it contains only one vowel.
 
 Given an input file with one string per line, how many of those strings are nice?
+
+## Checking the implementation
+
+A set of test cases is included in `/src/main/resources/sample-input.txt`. This should yield 255 matches in a total of 1.000 strings (one per line).
